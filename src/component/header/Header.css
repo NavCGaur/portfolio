@@ -1,0 +1,142 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.navbar__name{
+    width: 40%;
+    font-size: 2rem;
+    font-weight: 800;
+    padding-left: 10%;
+
+}   
+
+.navbar__name :nth-child(2){
+    color: var(--main-color);
+    font-size: 2.5rem;
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar__item{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: 800;
+    text-shadow: 0 0 25px var(--main-color);
+    padding-top: 30px;  
+    margin-right: 100px;
+
+}
+
+
+
+.navbar__item a:hover{
+    color: var(--main-color);
+
+}
+.navbar__menu{
+    display: none;
+}
+
+.navbar__close-icon{
+    fill: white;
+    height: 2rem;
+    width: 2rem;
+}
+
+.navbar__menu-icon{
+    fill: white;
+    height: 2rem;
+    width: 2rem;
+
+}
+
+@media screen and (max-width:900px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;    
+
+    }
+
+    .navbar__name{
+        padding-left: 15%;
+
+    }
+
+    .navbar__menu{
+        display: flex;
+        margin: 10px 0;
+        margin-right: 15%;
+        cursor: pointer;
+       
+            }
+
+    .navbar__item{
+        display: none;
+    }
+
+    .navbar__item-hidden{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 90px;
+        width: 67vw;
+        height: 50vh;
+        border: 1px solid var(--main-color);
+        border-radius: 25px;
+        text-align: center;
+        margin-left: 15%;
+        z-index: 10;
+        font-size: 1.2rem;
+        font-weight: 800;
+        text-shadow: 0 0 25px var(--main-color);
+        }
+    
+        .navbar__item-hidden a{
+        padding: 5px;
+        border-radius: 25px;
+        margin: 5px;
+    }
+
+    .navbar__item-hidden a:hover{
+       background-color: var(--main-color);
+       color: black;
+       font-size: 1.5rem;
+       transition: background-color 0.5s ease, transform 0.5s ease;
+       transition: font-size 0.5s ease, transform 0.5s ease;
+
+    }
+
+
+}
+
+/*
+
+    .navbar__item{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        width: 70vw;
+        height: 50vh;
+        border: 1px solid var(--main-color);
+        border-radius: 25px;
+        text-align: center;
+        margin-left: 15%;
+        padding: 0;
+        z-index: 10;
+        opacity: 0.8;
+
+    }
+
+
+*/
+
