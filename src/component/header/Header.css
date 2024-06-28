@@ -6,6 +6,7 @@
     background: rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     position: relative;
+    height: 8.5vh;
     
 }
 
@@ -72,9 +73,10 @@
 
     .navbar__menu{
         display: flex;
-        margin: 10px 0;
+        margin: 15px 0;
         margin-right: 15%;
         cursor: pointer;
+
        
             }
 
@@ -117,6 +119,18 @@
 
 
 }
+
+@media screen and (max-width:500px) {
+    .navbar__name{
+        padding-left: 2%;
+    }
+
+    .navbar__menu{
+        margin-right: 2%;
+    }
+    
+}
+
 
 /*
 

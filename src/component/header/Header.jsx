@@ -10,11 +10,8 @@ function Header() {
   const [menuStatus, setMenuStatus] = useState(false);
 
   function handleMenu(){
-    console.log(menuStatus);
 
     setMenuStatus(!menuStatus);
-
-    console.log(menuStatus);
 
   }
 
@@ -36,9 +33,6 @@ function Header() {
 
 
   
-  
-
-
   return (
     <nav className='navbar'>
       
@@ -54,7 +48,7 @@ function Header() {
       </div>
 
       <div className={menuStatus?'navbar__item-hidden':'navbar__item'}>
-          <a href='#skills' aria-label='home'onClick={handleMenu}>Home</a>
+          <a href='#' aria-label='home' >Home</a>
           <a href='#' aria-label='skill'>Skill</a>
           <a href='#' aria-label='About'>About</a>
           <a href='#' aria-label='Projects'>Projects</a>

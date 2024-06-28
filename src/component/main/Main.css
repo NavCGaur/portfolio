@@ -1,0 +1,90 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    
+}
+
+.main__leftSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.main__text{
+    width: 90%;
+    
+}
+
+.main__text span{
+    color: var(--main-color);
+}
+
+.main__text p{
+    text-align: justify;
+}
+
+.main__text h1, h2, p{
+    padding: 10px 0;
+
+}
+
+.main__rightSection{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+
+}
+
+.main__rightSection img{
+    width: 60%;
+    border-radius: 50%;
+    margin-left: 2%;
+    object-fit: cover;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.main__socialIcons{
+    display: flex;
+    flex-direction: row;
+   
+    fill: var(--main-color);
+    padding: 10px 0;
+}
+
+.main__icons{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.main__icons:hover{
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.main__buttons{
+    display: flex;
+}
+
+.main__buttons p{
+    margin-right: 10px;
+    width: 100px;
+    border-radius: 25px;
+    text-align: center;
+    color: black;   
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.main__buttons p:hover{
+ box-shadow: 0 0 25px var(--main-color);
+}
