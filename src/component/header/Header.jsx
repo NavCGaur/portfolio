@@ -34,7 +34,7 @@ function Header() {
 
   
   return (
-    <nav className='navbar'>
+    <nav className='navbar' id='navbar'>
       
 
       <div className='navbar__name'>
@@ -48,10 +48,10 @@ function Header() {
       </div>
 
       <div className={menuStatus?'navbar__item-hidden':'navbar__item'}>
-          <a href='#' aria-label='home' >Home</a>
-          <a href='#' aria-label='skill'>Skill</a>
+          <a href='#navbar' aria-label='home' >Home</a>
+          <a href='#skills' aria-label='skill'>Skill</a>
           <a href='#' aria-label='About'>About</a>
-          <a href='#' aria-label='Projects'>Projects</a>
+          <a href='#projects' aria-label='Projects'>Projects</a>
           <a href='#' aria-label='Contact'>Contact</a>
 
       </div>

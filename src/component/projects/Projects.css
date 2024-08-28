@@ -1,0 +1,139 @@
+.projects{
+    padding: 30px;
+    min-height: 100vh;
+    margin-bottom: 50px;
+
+}
+.projects__title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin: 40px 0;
+}
+
+
+.projects__container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-left: 10%;
+    border: 3px solid var(--main-color);
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 0 0 25px var(--main-color);
+    position: relative;
+    margin-bottom: 150px;
+    
+}   
+
+
+
+.projects__leftSection{
+    flex: 0 0 1 ;   
+    padding: 50px 0;
+ 
+ }
+
+.projects__image{
+    width: 90%;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 25px;
+
+}
+
+.projects__rightSection{
+    flex: 0 0 1 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 340px; 
+
+    }
+
+.projects__rightSection p{
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.7rem;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.projects__links{
+    margin-bottom: 30px;
+    display: flex;  
+    align-items: center;
+    
+}
+
+.projects__githubIcon{
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.projects__links :nth-child(2){
+   margin-left: 30px;
+   text-align: center;
+   padding: 10px;
+   border-radius: 25px;
+   background-color: var(--main-color);
+   color: black;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.projects__links a:hover, .projects__githubIcon:hover{
+
+    transform: scale(1.2); 
+    box-shadow: 0 0 35px var(--main-color);  
+}
+
+.projects__shadowbox{
+    position: absolute;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    bottom: -20px;
+    right: -20px;
+    border-radius: 25px;
+
+    z-index: -1;
+
+}
+
+
+@media (max-width:900px){
+    .projects__container{
+        flex-direction: column;       
+        
+    }   
+
+    .projects__leftSection{
+        max-width: 85%;
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .projects__rightSection{
+        max-width: 80%;
+    }
+
+    .projects__shadowbox{
+        
+        bottom: -10px;
+        right: -10px;
+        border-radius: 25px;
+    
+        z-index: -1;
+    
+    }
+    
+    
+
+
+}

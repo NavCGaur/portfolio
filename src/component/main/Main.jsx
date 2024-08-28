@@ -9,11 +9,11 @@ import ProfilePic from '../../assets/profilepic.jpg'
 
 function Main() {
   return (
-    <div className='main'>
+    <div className='main' id='main'>
         <div className='main__leftSection'>
             <div className='main__text'>
-                <h1>Hi, It's <span>Naveen</span></h1>
-                <h2>I'm a <span>Web Developer</span></h2>
+                <h1>Hi, It's <span>Naveen.</span></h1>
+                <h2>I'm a <span>Web Developer.</span></h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque natus eveniet, debitis inventore hic, odit nisi dolore laudantium placeat reprehenderit dolor, unde voluptatibus eligendi iste minus sunt numquam magni labore.</p>
 
             </div>

@@ -2,24 +2,20 @@ import './App.css';
 import React from 'react';
 
 
-import {Header,Main, Skills} from '../src/component/index'
+import {Header,Main, Skills, Projects} from '../src/component/index'
+import About from './component/about/About';
 
 
 function App() {
   return (
          <>
           <Header />
-          <Main />
-         
-             
+          <Main />            
           <Skills/>
+          <Projects />
+          <About />
 
-
-
-
-
-
-         </>   
+        </>   
 
 )
  
